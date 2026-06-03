@@ -1,0 +1,30 @@
+name: Build Jekyll
+
+on:
+  pull_request:
+    branches: [main]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: docs
+    steps:
+      - uses: actions/checkout@v4
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.4'
+          bundler-cache: true   # Caches gems for faster builds
+
+      - name: Configure GitHub Pages
+        uses: actions/configure-pages@v5
+
+      - name: Install Gems
+        run: bundle install
+
+      - name: Build with Jekyll
+        working-directory: docs
+        run: bundle exec jekyll build --destination ./_site
+        env:
+          JEKYLL_ENV: production
