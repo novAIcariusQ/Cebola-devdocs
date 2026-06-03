@@ -1,0 +1,7 @@
+{
+  "packages": {
+    "ruby": "latest"
+  , "gcc": "latest"
+  , "jekyll": "latest"
+  },
+}

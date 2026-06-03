@@ -1,0 +1,206 @@
+{
+  "lockfile_version": "1",
+  "packages": {
+    "gcc@latest": {
+      "last_modified": "2026-05-21T08:15:18Z",
+      "resolved": "github:NixOS/nixpkgs/4a29d733e8a7d5b824c3d8c958a946a9867b3eb2#gcc16",
+      "source": "devbox-search",
+      "version": "16.1.0",
+      "systems": {
+        "aarch64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/rxibjsv6kbn68yv4yxm2j7gpjpzqxylm-gcc-wrapper-16.1.0",
+              "default": true
+            },
+            {
+              "name": "man",
+              "path": "/nix/store/9zslvcy97r8gdv6j67fvbvzz85s98dfz-gcc-wrapper-16.1.0-man",
+              "default": true
+            },
+            {
+              "name": "info",
+              "path": "/nix/store/yrf34jg30y5znsllb2skx7cq2x2faxjk-gcc-wrapper-16.1.0-info"
+            }
+          ],
+          "store_path": "/nix/store/rxibjsv6kbn68yv4yxm2j7gpjpzqxylm-gcc-wrapper-16.1.0"
+        },
+        "aarch64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/435jmzq063lkllbzrncw8c2frp772zal-gcc-wrapper-16.1.0",
+              "default": true
+            },
+            {
+              "name": "man",
+              "path": "/nix/store/7301n7w2g1x5z211gcxz4gmzaaykykis-gcc-wrapper-16.1.0-man",
+              "default": true
+            },
+            {
+              "name": "info",
+              "path": "/nix/store/xln7vgjrqcv00p53c62914r8nw3ar34x-gcc-wrapper-16.1.0-info"
+            }
+          ],
+          "store_path": "/nix/store/435jmzq063lkllbzrncw8c2frp772zal-gcc-wrapper-16.1.0"
+        },
+        "x86_64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/2swyyj4x870fql28jgbd838xi3qhzj4x-gcc-wrapper-16.1.0",
+              "default": true
+            },
+            {
+              "name": "man",
+              "path": "/nix/store/chw8n9c9kafifh1rnmcni9hjlnzq6cgl-gcc-wrapper-16.1.0-man",
+              "default": true
+            },
+            {
+              "name": "info",
+              "path": "/nix/store/vpi9cwhpvjr200aqwryl16nbsypv7isi-gcc-wrapper-16.1.0-info"
+            }
+          ],
+          "store_path": "/nix/store/2swyyj4x870fql28jgbd838xi3qhzj4x-gcc-wrapper-16.1.0"
+        },
+        "x86_64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/1yyps6cg0vyigp1q6iyy92l2habli99s-gcc-wrapper-16.1.0",
+              "default": true
+            },
+            {
+              "name": "man",
+              "path": "/nix/store/xi0rbkik9hai1b4yf853j6gmky7v6lld-gcc-wrapper-16.1.0-man",
+              "default": true
+            },
+            {
+              "name": "info",
+              "path": "/nix/store/ydqkn5iwm5d50491nal33rn4wm8f76kl-gcc-wrapper-16.1.0-info"
+            }
+          ],
+          "store_path": "/nix/store/1yyps6cg0vyigp1q6iyy92l2habli99s-gcc-wrapper-16.1.0"
+        }
+      }
+    },
+    "github:NixOS/nixpkgs/nixpkgs-unstable": {
+      "last_modified": "2026-05-14T21:33:07Z",
+      "resolved": "github:NixOS/nixpkgs/8a1b0127302ea51e05bf4ea5a291743fac442406?lastModified=1778794387&narHash=sha256-BL04pOS9453Awkeb9f90XBJXBSkWxN%2BvB7HIgnL0iMM%3D"
+    },
+    "jekyll@latest": {
+      "last_modified": "2026-05-27T10:28:13Z",
+      "resolved": "github:NixOS/nixpkgs/4100e830e085863741bc69b156ec4ccd53ab5be0#jekyll",
+      "source": "devbox-search",
+      "version": "4.4.1",
+      "systems": {
+        "aarch64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/277bc64yib40xnm77k09v464qifzh9ad-jekyll-4.4.1",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/277bc64yib40xnm77k09v464qifzh9ad-jekyll-4.4.1"
+        },
+        "aarch64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/4521iwc4wnd1ackwmfjmmp8a2gdl61k3-jekyll-4.4.1",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/4521iwc4wnd1ackwmfjmmp8a2gdl61k3-jekyll-4.4.1"
+        },
+        "x86_64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/pp8sc3mf05wkrcyf9dm06mhddhwas15n-jekyll-4.4.1",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/pp8sc3mf05wkrcyf9dm06mhddhwas15n-jekyll-4.4.1"
+        },
+        "x86_64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/kk8bxpivkbwcgvnlf0g0znsmd5x6kp4b-jekyll-4.4.1",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/kk8bxpivkbwcgvnlf0g0znsmd5x6kp4b-jekyll-4.4.1"
+        }
+      }
+    },
+    "ruby@latest": {
+      "last_modified": "2026-05-21T08:15:18Z",
+      "plugin_version": "0.0.2",
+      "resolved": "github:NixOS/nixpkgs/4a29d733e8a7d5b824c3d8c958a946a9867b3eb2#ruby_4_0",
+      "source": "devbox-search",
+      "version": "4.0.5",
+      "systems": {
+        "aarch64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/107gs409cq23m3gqpli0p8s3g8q4gr8j-ruby-4.0.5",
+              "default": true
+            },
+            {
+              "name": "devdoc",
+              "path": "/nix/store/vscmsxym5r2wa7pn0ajfpx0sxgcfpnlk-ruby-4.0.5-devdoc"
+            }
+          ],
+          "store_path": "/nix/store/107gs409cq23m3gqpli0p8s3g8q4gr8j-ruby-4.0.5"
+        },
+        "aarch64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/m77ph75vq312phc61bbpqsawks5m4r0m-ruby-4.0.5",
+              "default": true
+            },
+            {
+              "name": "devdoc",
+              "path": "/nix/store/g37cmla5g1b1i3yd4pcywhcc9lagv493-ruby-4.0.5-devdoc"
+            }
+          ],
+          "store_path": "/nix/store/m77ph75vq312phc61bbpqsawks5m4r0m-ruby-4.0.5"
+        },
+        "x86_64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/98aijlkif84j14bhn97l1xy1l7l7rkmy-ruby-4.0.5",
+              "default": true
+            },
+            {
+              "name": "devdoc",
+              "path": "/nix/store/xf1ypiz4p3myn4yd5k1nsjsmhvm5r11m-ruby-4.0.5-devdoc"
+            }
+          ],
+          "store_path": "/nix/store/98aijlkif84j14bhn97l1xy1l7l7rkmy-ruby-4.0.5"
+        },
+        "x86_64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/svh0y2m2z99gldl7rfaf4zdphw0j6qpg-ruby-4.0.5",
+              "default": true
+            },
+            {
+              "name": "devdoc",
+              "path": "/nix/store/zi7giii8xahdmghjnd42mff0ms4vg709-ruby-4.0.5-devdoc"
+            }
+          ],
+          "store_path": "/nix/store/svh0y2m2z99gldl7rfaf4zdphw0j6qpg-ruby-4.0.5"
+        }
+      }
+    }
+  }
+}
