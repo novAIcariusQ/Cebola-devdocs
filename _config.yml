@@ -19,7 +19,7 @@
 # in the templates via {{ site.myvariable }}.
 
 title: Cebola Dev Docs
-description: Documentation for Cebola project.
+description: Developer documentation for Cebola project
 baseurl: "/Cebola-devdocs"
 url: "https://novaicariusq.github.io"
 github_username: infgotoinf
