@@ -1,2 +1,4 @@
+.*cache*
 .ruby-lsp
 .devbox
+_site

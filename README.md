@@ -12,7 +12,7 @@ Developer documentation for Cebola Project
 
 #### Option A: use [devbox](https://github.com/jetify-com/devbox)
 
-1.1 Install the devbox:
+1.1 [Install devbox](https://www.jetify.com/docs/devbox/installing-devbox#linux):
   - If you are on NixOS:
   ```bash
   nix-shell -p devbox
@@ -31,7 +31,6 @@ Developer documentation for Cebola Project
 
 1.3 Install gems:
   ```bash
-  cd docs
   bundle install
   ```
 
@@ -41,13 +40,11 @@ Developer documentation for Cebola Project
 
 1.2 Install gems:
   ```bash
-  cd docs
   bundle install
   ```
 
-### 2. Run the server
+### 2. Start the server
 
-From the `docs/` folder run this:
 ```bash
 bundle exec jekyll serve
 ```
