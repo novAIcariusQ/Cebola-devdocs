@@ -104,7 +104,7 @@ docker compose up
 ### Build
 
 ```bash
-docker compose up
+docker build . -t cebola-frontend
 ```
 
 ## Demo Access
