@@ -15,7 +15,7 @@ nav_order: 2
 ---
 
 {: .warning}
-> This page may require some additional info about backend and might not be fully covered, cause all of it's current content was based on [Fronted README.md](https://github.com/novAIcariusQ/Cebola-Frontend).
+> This page may require some additional info about backend and might not be fully covered, because all of it's current content was based on [Fronted README.md](https://github.com/novAIcariusQ/Cebola-Frontend).
 
 ## Stack
 

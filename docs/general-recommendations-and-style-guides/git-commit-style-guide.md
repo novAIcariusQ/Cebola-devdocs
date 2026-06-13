@@ -15,9 +15,14 @@ nav_order: 1
 
 ---
 
+## Commit tense
+
+Use the **imperative, present tense**: "**change**" not "changed" nor "changes". Think of `If applied, this commit will...`.
+
+
 ## Line size
 
-You should limit your **subject line size** to *50 characters* or **maximum 72**. It is not a hard limit, just an approximate number. Keeping subject lines at this length ensures that they are readable, and forces the author to think for a moment about the most concise way to explain what’s going on. The body should be wrapped at about **72 characters**.
+You should limit your **subject line size** to *50 characters* or **maximum 72**. Keeping subject lines at this length ensures that they are readable, and forces the author to think for a moment about the most concise way to explain what’s going on. The body should be wrapped at about **72 characters**.
 
 A commit with a long subject line wraps and elipses if it's too long:
 
@@ -27,22 +32,22 @@ If you hover on it, you will see how it was written in one line:
 
 <img src="../../../assets/images/bad_commit_message_example1_1.png" >
 
-In `git log` it's also just a one line:
+In `git log` it's also just one line:
 
 <img src="../../../assets/images/bad_commit_message_example1_2.png" >
 
-And compare it, to a good written commit:
+And compare it to a good written commit:
 
 <img src="../../../assets/images/good_commit_message_example1.png" >
 
-Much more easy to read right?
+Much easier to read right?
 
 ### How to measure line size?
 
 <!-- TODO: Learn about git hooks -->
 You can ether use an **editor**, or **git hooks**. I currently don't know how to use git hooks, I'll write about them later, but, as I know, they can automaticaly format commit messages for you if you configure them.
 
-On the other side you can just type `git commit` and it will open editor you set with `git config core.editor <editor>` to edit the commit message, for example I use Helix and for me it looks looks like this, automatically showing 50 and 72 character marks:
+Instead of typing `git commit -m "<Your commit message>"`, you can just type `git commit`, which will open editor you set with `git config core.editor <editor>` for editing the commit message. For example, I use Helix and it automatically shows 50 and 72 character guides. For me it looks like this:
 
 <!-- TODO: Make better commit message in an editor picture -->
 <img src="../../../assets/images/commit_message_in_an_editor.png" >
@@ -52,9 +57,9 @@ Your favourite editor may not show you there you should wrap the line, but I'm s
 
 ## Conventional commits
 
-The Conventional Commits specification is a lightweight convention on top of commit messages. It provides an easy set of rules for creating an explicit commit history; which makes it easier to write automated tools on top of.
+The Conventional Commits specification is a lightweight convention on top of commit messages. It provides an easy set of rules for creating an explicit commit history, which makes it easier to write automated tools on top of.
 
-Then writing a commit message it must be structured as follows:
+Commit messages must be structured as follows:
 
 <!-- Thanks again https://gist.github.com/qoomon/5dfcdf8eec66a051ecd85625518cfd13 -->
 > <pre>
@@ -93,7 +98,7 @@ Revert "<reverted commit subject line>"
 - `cl` Commits that affec deployment scripts, CI/CD pipelines, backups, monitoring, or recovery procedures
 - `chore` Commits that represent tasks like initial commit, modifying .gitignore, version change and etc.
 
-Depending on the project and it's specific modules, there *might be more types added*, for example `db` (related to Database changes), or `build` (related to project build process), but invent new types only then it's indeed necessary, because most of the time existing type with a scope is enough to specify what exact type of change commit does.
+Depending on the project and its specific modules, there *might be more types added*, for example `db` (database related changes), or `build` (project build related process), but most of the time existing type with a scope is enough to specify what exact type of change a commit makes.
 
 {: .note}
 > If you can't decide one type for your commit, that means you're commiting too much at once. `git add <file ...>` and `git commit` as many times as you need to keep everything pretty and clean.
@@ -105,14 +110,14 @@ The `scope` provides additional contextual information.
 - The scope is an *optional* part
 - Different repos and projects can have different scopes
 
-Then you make a change you usally can specify the scope, for example `feat(admin)` (will be some sort of a new feature for admin), `feat(navigation)` (will be some sort of feature related to navigation), `fix(api)` (will fix some issues related to API) and etc. If you can't specify a scope then don't.
+Then you make a change you usally can specify the scope, for example `feat(admin)` (admin related feature), `feat(navigation)` (navigation related feature), `fix(render)` (render related bug fix) and etc.
 
 ### Breaking changes indicator
 
-This indicator signals that the changes may **disrupt existing functionality** for users or other developers, **breaks** their workflow if you want.
+This indicator signals that the changes may **disrupt existing functionality** for users or other developers; changes **break** their current workflow if you want.
 
 - A commit that introduce breaking changes must be indicated by an ! before the : in the subject line e.g. `feat(api)!: remove status endpoint`
-- Breaking changes should be described in the commit footer section, if the commit description isn't sufficiently informative
+- Breaking changes should be described in the commit [footer section](#footer), if the commit description isn't sufficiently informative like this `BREAKING CHANGE: drop windows support.`
 
 For exmple change function name, return type or input parameters, remove API endpoint, dropping platform support, changing default behavior.
 
@@ -121,9 +126,9 @@ For exmple change function name, return type or input parameters, remove API end
 The description contains a concise description of the change.
 
 - The description is **mandatory**
-- Use the **imperative, present tense**: "**change**" not "changed" nor "changes". Think of `If applied, this commit will...`
 - Do not capitalize the first letter
 - Do not end the description with a period (.)
+- In case if you can specifiy the scope also see [scopes](#scopes)
 - In case of breaking changes also see [breaking changes indicator](#breaking-changes-indicator)
 
 ### Body
@@ -142,8 +147,6 @@ The footer should contain issue references and informations about breaking chang
 - The footer is an *optional* part
 - Optionally reference issue identifiers (e.g., Resolves: #123, See also: #456, #789)
 - Breaking Changes must start with the word BREAKING CHANGE:
-- For a single line description just add a space after BREAKING CHANGE:
-- For a multi line description add two new lines after BREAKING CHANGE:
 
 ## Examples
 
@@ -203,7 +206,7 @@ Closes: #280
 
 ## References
 
-I heavily relied on those references and coppied a lot from them. Really recommend to check those out.
+I heavily relied on these references and copied a lot from them. I strongly recommend to check those out.
 
 - [Conventional Commits Chetsheet](https://gist.github.com/qoomon/5dfcdf8eec66a051ecd85625518cfd13)
 - [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/)
