@@ -1,5 +1,5 @@
 ---
-title: Git commit style guide
+title: Git commits
 parent: General recommendations and style guides
 nav_order: 1
 ---
@@ -22,7 +22,7 @@ Use the **imperative, present tense**: "**change**" not "changed" nor "changes".
 
 ## Line size
 
-You should limit your **subject line size** to *50 characters* or **maximum 72**. Keeping subject lines at this length ensures that they are readable, and forces the author to think for a moment about the most concise way to explain what’s going on. The body should be wrapped at about **72 characters**.
+You should limit your **subject line size** to *50 characters* or **72 maximum**. Keeping subject lines at this length ensures that they are readable, and forces the author to think for a moment about the most concise way to explain what’s going on. The body should be wrapped at about **72 characters**.
 
 A commit with a long subject line wraps and elipses if it's too long:
 
@@ -49,7 +49,6 @@ You can ether use an **editor**, or **git hooks**. I currently don't know how to
 
 Instead of typing `git commit -m "<Your commit message>"`, you can just type `git commit`, which will open editor you set with `git config core.editor <editor>` for editing the commit message. For example, I use Helix and it automatically shows 50 and 72 character guides. For me it looks like this:
 
-<!-- TODO: Make better commit message in an editor picture -->
 <img src="../../../assets/images/commit_message_in_an_editor.png" >
 
 Your favourite editor may not show you there you should wrap the line, but I'm sure it does display current cursor position on the line, so you'll be fine.
@@ -87,7 +86,11 @@ Revert "<reverted commit subject line>"
 ```
 <sup>Follows default git revert message</sup>
 
-### Types
+### Subject line
+
+Subject line must be a brief explanation of the change.
+
+#### Types
 
 - `feat` Commits that add, adjust or remove a feature to/of/from the API or UI
 - `fix` Commits that fix an API or UI bug of a preceded `feat` commit
@@ -103,7 +106,7 @@ Depending on the project and its specific modules, there *might be more types ad
 {: .note}
 > If you can't decide one type for your commit, that means you're commiting too much at once. `git add <file ...>` and `git commit` as many times as you need to keep everything pretty and clean.
 
-### Scopes
+#### Scopes
 
 The `scope` provides additional contextual information.
 
@@ -112,7 +115,7 @@ The `scope` provides additional contextual information.
 
 Then you make a change you usally can specify the scope, for example `feat(admin)` (admin related feature), `feat(navigation)` (navigation related feature), `fix(render)` (render related bug fix) and etc.
 
-### Breaking changes indicator
+#### Breaking changes indicator
 
 This indicator signals that the changes may **disrupt existing functionality** for users or other developers; changes **break** their current workflow if you want.
 
@@ -120,6 +123,8 @@ This indicator signals that the changes may **disrupt existing functionality** f
 - Breaking changes should be described in the commit [footer section](#footer), if the commit description isn't sufficiently informative like this `BREAKING CHANGE: drop windows support.`
 
 For exmple change function name, return type or input parameters, remove API endpoint, dropping platform support, changing default behavior.
+
+---
 
 ### Description
 
