@@ -44,8 +44,7 @@ Much easier to read right?
 
 ### How to measure line size?
 
-<!-- TODO: Learn about git hooks -->
-You can ether use an **editor**, or **git hooks**. I currently don't know how to use git hooks, I'll write about them later, but, as I know, they can automaticaly format commit messages for you if you configure them.
+You can ether use an **editor**, or **git hooks**. With git hooks you can configure what actions will be done after sertain git opperations, so you, for example, can make so your commit message get automatically wrapped at 72 character line size. Git hooks will not be further discussed here.
 
 Instead of typing `git commit -m "<Your commit message>"`, you can just type `git commit`, which will open editor you set with `git config core.editor <editor>` for editing the commit message. For example, I use Helix and it automatically shows 50 and 72 character guides. For me it looks like this:
 
