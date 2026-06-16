@@ -22,7 +22,6 @@ title: Cebola Dev Docs
 description: Developer documentation for Cebola project
 baseurl: "/Cebola-devdocs"
 url: "https://novaicariusq.github.io"
-github_username: infgotoinf
 
 defaults:
   - scope:
