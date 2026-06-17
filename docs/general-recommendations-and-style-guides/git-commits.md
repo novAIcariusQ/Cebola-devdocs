@@ -36,7 +36,7 @@ In `git log` it's also just one line:
 
 <img src="../../../assets/images/bad_commit_message_example1_2.png" >
 
-And compare it to a good written commit:
+And compare it to a good written commit message:
 
 <img src="../../../assets/images/good_commit_message_example1.png" >
 
@@ -44,9 +44,9 @@ Much easier to read right?
 
 ### How to measure line size?
 
-You can ether use an **editor**, or **git hooks**. With git hooks you can configure what actions will be done after sertain git opperations, so you, for example, can make so your commit message get automatically wrapped at 72 character line size. Git hooks will not be further discussed here.
+You can ether use an **editor**, or **Git hooks**. With Git hooks you can configure what actions will be done after certain Git operations, for example, you can make your commit message get automatically wrap at 72-character line length. Git hooks will not be discussed further here.
 
-Instead of typing `git commit -m "<Your commit message>"`, you can just type `git commit`, which will open editor you set with `git config core.editor <editor>` for editing the commit message. For example, I use Helix and it automatically shows 50 and 72 character guides. For me it looks like this:
+Instead of typing `git commit -m "<Your commit message>"`, you can just type `git commit`, which will open editor you set with `git config core.editor <editor>` for editing the commit message. For example, I use Helix and it automatically shows 50 and 72-character guides. For me it looks like this:
 
 <img src="../../../assets/images/commit_message_in_an_editor.png" >
 
@@ -68,6 +68,7 @@ Commit messages must be structured as follows:
 > <b><a href="#footer">&lt;optional footer&gt;</a></b>
 > </pre>
 
+<!-- I think that can be removed
 Initial commit:
 ```text
 chore: init
@@ -84,10 +85,13 @@ Revert commit:
 Revert "<reverted commit subject line>"
 ```
 <sup>Follows default git revert message</sup>
+-->
+
+---
 
 ### Subject line
 
-Subject line must be a brief explanation of the change.
+Subject line briefly explains the change.
 
 #### Types
 
@@ -116,12 +120,12 @@ Then you make a change you usally can specify the scope, for example `feat(admin
 
 #### Breaking changes indicator
 
-This indicator signals that the changes may **disrupt existing functionality** for users or other developers; changes **break** their current workflow if you want.
+This indicator signals that the changes may **disrupt existing functionality** for users or other developers; changes may **break** their current workflow if you want.
 
 - A commit that introduce breaking changes must be indicated by an ! before the : in the subject line e.g. `feat(api)!: remove status endpoint`
 - Breaking changes should be described in the commit [footer section](#footer), if the commit description isn't sufficiently informative like this `BREAKING CHANGE: drop windows support.`
 
-For exmple change function name, return type or input parameters, remove API endpoint, dropping platform support, changing default behavior.
+Examples of breaking changes: changing a function name, or a return type, or input parameters, removing an API endpoint, droping platform support, changing a default behavior.
 
 ---
 
@@ -139,10 +143,10 @@ The description contains a concise description of the change.
 
 The body should include the further description of the change and motivation for the change and contrast this with previous behavior if necessary.
 
-- The body is an optional part
+- The body is an *optional* part
 - You can use bullet points (- or *) here
 
-Sometimes you don't need to add body if description is self explanatory, for example `docs: fix typo`, or `chore(cl): update actions' versions`, or `refactor!: change 'request()' function name to 'sendRequest()'` and etc.
+Sometimes you don't need to add body if description is self explanatory, for example `docs: fix typo`, or `chore(cl): update actions' versions to match the latest`, or `refactor!: change 'request()' function name to 'sendRequest()'` and etc.
 
 ### Footer
 
@@ -150,7 +154,7 @@ The footer should contain issue references and informations about breaking chang
 
 - The footer is an *optional* part
 - Optionally reference issue identifiers (e.g., Resolves: #123, See also: #456, #789)
-- Breaking Changes must start with the word BREAKING CHANGE:
+- Breaking Changes must start with the words BREAKING CHANGE:
 
 ## Examples
 

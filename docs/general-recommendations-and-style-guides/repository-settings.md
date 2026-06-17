@@ -23,15 +23,16 @@ In the 'Code' tab:
   - Add Description and Website if needed
 
 In the 'Settings' tab:
-- Branch name must be `main`.
-- Disable Wikis.
+- Branch name must be `main`
+- [ ] Wikis
+- [x] Automatically delete head branches
 
 
 ## Default branch policy
 
-Must be active, have `Default` branch as targeted.
+Create a new **ruleset** calles "Default branch policy". It must be **active** and have `Default` branch as **targeted**.
 
-### For repositories that require reviews
+### For big repositories that require reviews
 
 Examples: site backend, site frontend, other critical repositories.
 
@@ -39,7 +40,7 @@ Examples: site backend, site frontend, other critical repositories.
 - [ ] Restrict updates
 - [x] Restrict deletions
 - [ ] Requite linear history
-- [ ] Require deployments to succeed
+- [x] Require deployments to succeed **(IF YOU NEED THIS)**
 - [ ] Require signed commits
 - [x] Require a pull request before merging
     - Required approvals: 1
@@ -58,7 +59,7 @@ Examples: site backend, site frontend, other critical repositories.
 
 ---
 
-### For repositories that not require reviews
+### For small repositories that not require reviews
 
 Examples: docs repositories.
 
@@ -68,7 +69,7 @@ For such repositories rulest is optional, but good to have.
 - [ ] Restrict updates
 - [x] Restrict deletions
 - [ ] Requite linear history
-- [ ] Require deployments to succeed
+- [x] Require deployments to succeed **(IF YOU NEED THIS)**
 - [ ] Require signed commits
 - [ ] Require a pull request before merging
 - [x] Require status checks to pass **(THEN YOU HAVE CI/CD TESTS)**
@@ -82,5 +83,5 @@ For such repositories rulest is optional, but good to have.
 
 ## Post configuration setup
 
-- Open `Projects` tab and link repo to the project.
-- [Add labels to the repository.](../github-issues-and-pull-requests/#how-to-copy-labels-from-one-repo-to-another)
+- Open 'Projects' tab and *link repo to the project*
+- [Add labels to the repository](../github-issues-and-pull-requests/#how-to-copy-labels-from-one-repo-to-another)
