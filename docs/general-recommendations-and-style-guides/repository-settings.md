@@ -69,12 +69,10 @@ For such repositories rulest is optional, but good to have.
 - [ ] Restrict updates
 - [x] Restrict deletions
 - [ ] Requite linear history
-- [x] Require deployments to succeed **(IF YOU NEED THIS)**
+- [ ] Require deployments to succeed
 - [ ] Require signed commits
 - [ ] Require a pull request before merging
-- [x] Require status checks to pass **(THEN YOU HAVE CI/CD TESTS)**
-    - [ ] Require branches to be up to date before merging
-    - [x] Do not require status checks on creation
+- [ ] Require status checks to pass
 - [x] Block force pushes
 - [ ] Require code scanning results
 - [ ] Require code quality results
