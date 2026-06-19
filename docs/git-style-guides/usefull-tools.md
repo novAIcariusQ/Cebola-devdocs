@@ -1,6 +1,6 @@
 ---
 title: Usefull tools
-parent: General recommendations and style guides
+parent: Git style guides
 nav_order: 4
 ---
 

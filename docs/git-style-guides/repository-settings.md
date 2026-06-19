@@ -1,6 +1,6 @@
 ---
 title: Repository settings
-parent: General recommendations and style guides
+parent: Git style guides
 nav_order: 3
 ---
 

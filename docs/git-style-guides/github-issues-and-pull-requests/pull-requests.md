@@ -23,9 +23,9 @@ For those recommendations visit [this page](../).
 ## Branch naming
 
 Branch name must be structured as follows:
-> [\<type\>](../../git-commits/#types)/[\<optional scope\>](../../git-commits/#scopes)/\<**optional name**\>
+> [\<type\>](../../commits/#types)/[\<optional scope\>](../../commits/#scopes)/\<**optional name**\>
 
-**Optional name** is the [description part of the title](../../git-commits/#description) shortened to about one or two words for pull request. You can use it even then a scope isn't specified.
+**Optional name** is the [description part of the title](../../commits/#description) shortened to about one or two words for pull request. You can use it even then a scope isn't specified.
 
 Examples:
   - `feat/merchant/shop_status` - type/scope/name

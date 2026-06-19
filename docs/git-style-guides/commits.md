@@ -1,6 +1,6 @@
 ---
-title: Git commits
-parent: General recommendations and style guides
+title: Commits
+parent: Git style guides
 nav_order: 1
 ---
 

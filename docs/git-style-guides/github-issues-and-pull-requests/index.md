@@ -1,6 +1,6 @@
 ---
 title: Github issues and pull requests
-parent: General recommendations and style guides
+parent: Git style guides
 nav_order: 2
 ---
 
@@ -19,25 +19,25 @@ This page contains recommendations **common to both issues and pull requests**. 
 
 ## Tense
 
-Issues and pull requests must be written in **imperative, present tense** [as well as git commits](../git-commits/#commit-tense).
+Issues and pull requests must be written in **imperative, present tense** [as well as git commits](../commits/#commit-tense).
 
 ## Title
 
 Title must briefly explain the change.
 
-- Must have size of *50 characters* or **72 maximum** [as well as Git commits](../git-commits/#line-size) (this rule applies only to the title)
-- Must follow [git commit syle guide for subject line](../git-commits/#subject-line)
+- Must have size of *50 characters* or **72 maximum** [as well as Git commits](../commits/#line-size) (this rule applies only to the title)
+- Must follow [git commit syle guide for subject line](../commits/#subject-line)
   - If it is a complex issue that involves differen types of changes, then *type can be avoided* and issue must be broken down in sub-issues.
 
 Structure a title as you structure a subject line for a commit message:
 
-> <b><a href="../git-commits/#types">&lt;type&gt;</a></b>(<b><a href="../git-commits/#scopes">&lt;optional scope&gt;</a></b>): <b><a href="../git-commits/#description">&lt;description&gt;</a></b>
+> <b><a href="../commits/#types">&lt;type&gt;</a></b>(<b><a href="../commits/#scopes">&lt;optional scope&gt;</a></b>): <b><a href="../commits/#description">&lt;description&gt;</a></b>
 
 ## Labels
 
 Labels are **mandatory** and needed to categorize issues and pull requests.
 
-Most of the labels are the same as [the types in Git commit guide](../git-commits/#types), while the others are self-explanatory.
+Most of the labels are the same as [the types in Git commit guide](../commits/#types), while the others are self-explanatory.
 
 <!-- Meh, I think we don't need this one
 
