@@ -23,15 +23,17 @@ For those recommendations visit [this page](../).
 ## Branch naming
 
 Branch name must be structured as follows:
-> [\<type\>](../../commits/#types)/[\<optional scope\>](../../commits/#scopes)/\<**optional name**\>
+> [\<type\>](../../commits/#types)/[\<optional scope\>](../../commits/#scopes)/\<**optional title**\>
 
-**Optional name** is the [description part of the title](../../commits/#description) shortened to about one or two words for pull request. You can use it even then a scope isn't specified.
+**Optional title** is the [description part of the title](../../commits/#description) shortened to about one or two words for pull request. You can use it even then a scope isn't specified.
+
+- Scope and title are both optional, but you **must use at least one of them** in the branch name
 
 Examples:
-  - `feat/merchant/shop_status` - type/scope/name
-  - `feat/customer/stripe` - type/scope/name
-  - `feat/comment` - type/name
-  - `cl/grafana` - type/name
+  - `feat/merchant/shop_status` - type/scope/title
+  - `feat/customer/stripe` - type/scope/title
+  - `feat/comment` - type/title
+  - `cl/grafana` - type/title
   - `docs/merchant` - type/scope
 
 
@@ -45,12 +47,12 @@ It's mostly enough to just put an *unordered list with all commits made by the c
 
 ### How to create a pull request from command line?
 
-If you've already installed `github-cli` and run `gh auth login`, then run the following from your local branch:
+If you've already installed `github-cli` and run `gh auth login`, run the following from your local branch:
 ```text
 gh pr create
 ```
 
-This will create a pull request and if you press `e` then it prompts you to edit it's description it will open the **editor** you set with `git config core.editor <editor>` and will have an *unordered list with all commit messages from your local branch* as it's content. (It surrounds all list items with asterisks (\*\*) for some reason, I recommend you to remove them.)
+This will create a pull request and if you press `e` when it prompts you to edit it's description, then it will open the **editor** you set with `git config core.editor <editor>` and will have an *unordered list with all commit messages from your local branch* as it's content. (It surrounds all list items with asterisks (\*\*) for some reason, I recommend you to remove them.)
 
 
 ## Delevopment

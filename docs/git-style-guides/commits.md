@@ -15,7 +15,7 @@ nav_order: 1
 
 ---
 
-## Commit tense
+## Tense
 
 Use the **imperative, present tense**: "**change**" not "changed" nor "changes". Think of `If applied, this commit will...`.
 
@@ -26,19 +26,19 @@ You should limit your **subject line size** to *50 characters* or **72 maximum**
 
 A commit with a long subject line wraps and elipses if it's too long:
 
-<img src="../../../assets/images/bad_commit_message_example1.png" >
+<img src="{{site.baseurl}}/assets/images/bad_commit_message_example1.png">
 
-If you hover on it, you will see how it was written in one line:
+If you hover on it, you will see that it was written in one line:
 
-<img src="../../../assets/images/bad_commit_message_example1_1.png" >
+<img src="{{site.baseurl}}/assets/images/bad_commit_message_example1_1.png">
 
 In `git log` it's also just one line:
 
-<img src="../../../assets/images/bad_commit_message_example1_2.png" >
+<img src="{{site.baseurl}}/assets/images/bad_commit_message_example1_2.png">
 
 And compare it to a good written commit message:
 
-<img src="../../../assets/images/good_commit_message_example1.png" >
+<img src="{{site.baseurl}}/assets/images/good_commit_message_example1.png">
 
 Much easier to read right?
 
@@ -48,7 +48,7 @@ You can ether use an **editor**, or **Git hooks**. With Git hooks you can config
 
 Instead of typing `git commit -m "<Your commit message>"`, you can just type `git commit`, which will open editor you set with `git config core.editor <editor>` for editing the commit message. For example, I use Helix and it automatically shows 50 and 72-character guides. For me it looks like this:
 
-<img src="../../../assets/images/commit_message_in_an_editor.png" >
+<img src="{{site.baseurl}}/assets/images/commit_message_in_an_editor.png">
 
 Your favourite editor may not show you there you should wrap the line, but I'm sure it does display current cursor position on the line, so you'll be fine.
 
@@ -95,7 +95,7 @@ Subject line briefly explains the change.
 
 #### Types
 
-- `feat` Commits that add, adjust or remove a feature to/of/from the API or UI
+- `feat` Commits that add, adjust or remove a feature {{site.baseurl}}/m the API or UI
 - `fix` Commits that fix an API or UI bug of a preceded `feat` commit
 - `refactor` Commits that rewrite or restructure code without altering API or UI behavior
   - `perf` Commits are special type of `refactor` commits that specifically improve performance
@@ -107,7 +107,7 @@ Subject line briefly explains the change.
 Depending on the project and its specific modules, there *might be more types added*, for example `db` (database related changes), or `build` (project build related process), but most of the time existing type with a scope is enough to specify what exact type of change a commit makes.
 
 {: .note}
-> If you can't decide one type for your commit, that means you're commiting too much at once. `git add <file ...>` and `git commit` as many times as you need to keep everything pretty and clean.
+> If you can't decide one type for your commit, that means you're commiting too much at once. Do `git add <file ...>` and `git commit` as many times as you need to keep everything pretty and clean.
 
 #### Scopes
 
@@ -116,11 +116,11 @@ The `scope` provides additional contextual information.
 - The scope is an *optional* part
 - Different repos and projects can have different scopes
 
-Then you make a change you usally can specify the scope, for example `feat(admin)` (admin related feature), `feat(navigation)` (navigation related feature), `fix(render)` (render related bug fix) and etc.
+When you make a change, you can usually specify the scope - for example `feat(admin)` (admin-related feature), `feat(navigation)` (navigation-related feature), `fix(render)` (render-related bug fix), etc.
 
 #### Breaking changes indicator
 
-This indicator signals that the changes may **disrupt existing functionality** for users or other developers; changes may **break** their current workflow if you want.
+This indicator signals that the changes may **disrupt existing functionality or workflow** for users or other developers.
 
 - A commit that introduce breaking changes must be indicated by an ! before the : in the subject line e.g. `feat(api)!: remove status endpoint`
 - Breaking changes should be described in the commit [footer section](#footer), if the commit description isn't sufficiently informative like this `BREAKING CHANGE: drop windows support.`
@@ -134,8 +134,8 @@ Examples of breaking changes: changing a function name, or a return type, or inp
 The description contains a concise description of the change.
 
 - The description is **mandatory**
-- Do not capitalize the first letter
-- Do not end the description with a period (.)
+- **Do not** capitalize the first letter
+- **Do not** end the description with a period (.)
 - In case if you can specifiy the scope also see [scopes](#scopes)
 - In case of breaking changes also see [breaking changes indicator](#breaking-changes-indicator)
 
@@ -144,7 +144,7 @@ The description contains a concise description of the change.
 The body should include the further description of the change and motivation for the change and contrast this with previous behavior if necessary.
 
 - The body is an *optional* part
-- You can use bullet points (- or *) here
+- Here you can use unordered (- or *) and ordered (1. 2. 3. ...) lists
 
 Sometimes you don't need to add body if description is self explanatory, for example `docs: fix typo`, or `chore(cl): update actions' versions to match the latest`, or `refactor!: change 'request()' function name to 'sendRequest()'` and etc.
 
@@ -155,6 +155,7 @@ The footer should contain issue references and informations about breaking chang
 - The footer is an *optional* part
 - Optionally reference issue identifiers (e.g., Resolves: #123, See also: #456, #789)
 - Breaking Changes must start with the words BREAKING CHANGE:
+
 
 ## Examples
 

@@ -37,7 +37,7 @@ Priority ranges from highest(P0) to lowest (P4).
 
 - P0 - usually bugs and other security-sensitive issues that must be fixed as quickly as possible
 - P1 - usually issues that block other issues that must be done so you can continue other tasks; usually architecture related
-- P2 - normal priority issues
+- P2 - normal priority tasks
 - P3 - less important tasks
 - P4 - low-priority tasks that can wait
 
@@ -53,11 +53,11 @@ An estimate is the **ammount of tasks required**. One big task - estimate of 1, 
 
 Example of an issue with esimate of 3:
 
-<img src="../../../../assets/images/issues_estimate3_example.png">
+<img src="{{site.baseurl}}/assets/images/issues_estimate3_example.png">
 
 Example of an issue with estimate of 0 (just summarises sub-issues):
 
-<img src="../../../../assets/images/issues_estimate0_example.png">
+<img src="{{site.baseurl}}/assets/images/issues_estimate0_example.png">
 
 
 ## Relationships
@@ -66,11 +66,11 @@ Relationships define connections between an issue with other issues: **parrent**
 
 To choose different repository for a relationship, click the back arrow in the window:
 
-<img src="../../../../assets/images/issues_relationships.png">
+<img src="{{site.baseurl}}/assets/images/issues_relationships.png">
 
 ### Blocked by/Blocking
 
-If you *can't work on an issue without some other issue being closed*, mark it as blocked by that issue.
+If you *can't work on an issue while some other issue isn't closed*, mark it as blocked by that issue.
 
 ### Child/Parent
 
@@ -80,4 +80,4 @@ If you *can't work on an issue without some other issue being closed*, mark it a
 
 ## Additional information
 
-If you started working on an issue, please move it to "In progress" column and assign it to yourself.
+If you start working on an issue, move it to the "In progress" column in the project and assign it to yourself.

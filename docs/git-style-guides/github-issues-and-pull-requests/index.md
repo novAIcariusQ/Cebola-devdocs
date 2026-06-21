@@ -19,7 +19,7 @@ This page contains recommendations **common to both issues and pull requests**. 
 
 ## Tense
 
-Issues and pull requests must be written in **imperative, present tense** [as well as git commits](../commits/#commit-tense).
+Issues and pull requests must be written in **imperative, present tense** [as well as git commits](../commits/#tense).
 
 ## Title
 
@@ -27,7 +27,7 @@ Title must briefly explain the change.
 
 - Must have size of *50 characters* or **72 maximum** [as well as Git commits](../commits/#line-size) (this rule applies only to the title)
 - Must follow [git commit syle guide for subject line](../commits/#subject-line)
-  - If it is a complex issue that involves differen types of changes, then *type can be avoided* and issue must be broken down in sub-issues.
+  - If it is a complex issue that involves differen types of changes, then *use of type can be avoided* and issue must be broken down in sub-issues.
 
 Structure a title as you structure a subject line for a commit message:
 

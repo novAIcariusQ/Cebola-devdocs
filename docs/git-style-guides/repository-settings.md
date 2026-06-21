@@ -23,7 +23,7 @@ In the 'Code' tab:
   - Add Description and Website if needed
 
 In the 'Settings' tab:
-- Branch name must be `main`
+- Default branch name must be `main`
 - [ ] Wikis
 - [x] Automatically delete head branches
 
